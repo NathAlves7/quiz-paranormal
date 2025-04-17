@@ -19,7 +19,7 @@ perguntas = [
         ]
     },
     {
-        pergunta: "Quantos são os tipo de alheios?",
+        pergunta: "Quantos são os tipos de alheios?",
         respostas: [
             { opcao: "13", correto: false },
             { opcao: "10", correto: false },
@@ -84,7 +84,7 @@ const conteudoFinal = document.querySelector(".fim");
 
 // PARTE 3: Variáveis para controle do jogo
 let indiceAtual = 0; // Índice da pergunta atual
-let acertos = -8; // Contador de acertos
+let acertos = 0; // Contador de acertos
 
 // PARTE 4: Função para carregar uma nova pergunta
 function carregarPergunta() {
@@ -108,7 +108,7 @@ function carregarPergunta() {
         botao.onclick = function () {
             // Se a resposta for correta (resposta.correto === true), incrementa o número de acertos
             if (resposta.correto) {
-                acertos = acertos + 1;
+                acertos = acertos;
                 acertos++; // Incrementa o contador de acertos
             }
 
